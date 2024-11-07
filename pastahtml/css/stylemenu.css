@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: absolute;
+    width: 1480px;
+    height: 120px;
+    left: 0px;
+    top: -1px;
+}
+
+.botaoCalendario {
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    background-color: #F6F4F4;
+    position: absolute;
+    width: 527px;
+    height: 40px;
+    left: 491px;
+    top: 400px;
+}
+
+.botaoLista {
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    background-color: #F6F4F4;
+    position: absolute;
+    width: 527px;
+    height: 40px;
+    left: 491px;
+    top: 285px;
+
+}
+
+.botaoCadastrar {
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    background-color: #F6F4F4;
+    position: absolute;
+    width: 527px;
+    height: 40px;
+    left: 491px;
+    top: 343px;
+}
+
+.botaoVagas {
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    background-color: #F6F4F4;
+    position: absolute;
+    width: 527px;
+    height: 40px;
+    left: 491px;
+    top: 343px;
+}
+
+.botaoLista:hover{
+    background-color: rgb(148, 144, 144);
+    color: white;
+}
+.botaoCadastrar:hover{
+    background-color: rgb(148, 144, 144);
+    color: white;
+}
+.botaoCalendario:hover{
+    background-color: rgb(148, 144, 144);
+    color: white;
+}
+.quadrado1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 502px;
+    top: 237px;
+    background: #D9D9D9;
+    
+}
+.quadrado2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 502px;
+    top: 297px;
+    background: #D9D9D9;
+
+}
+.quadrado3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 502px;
+    top: 353px;
+    background: #D9D9D9;
+
+}
+.quadrado4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 502px;
+    top: 411px;
+    background: #D9D9D9; 
+}

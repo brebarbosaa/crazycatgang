@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Cadastrar Novo Gato</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/cadastrarnovogato.png">
+            <a href="../index.php" class="botaoMenu">Menu</a>
+        </div>
+        <br><br><br><br><br><br>
+        <form id="form-gatos" action="../php/novoconectar.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nome_gato">Nome:</label>
+                <input type="text" id="nome" name="nome_gato" required><br><br>
+            </div> 
+
+            <div class="form-group">
+                <label for="tutor">sexo:</label>
+                <input type="text" id="sexo" name="sexo_gato" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="data_nasc_gato">data nascimento gato:</label>
+                <input type="date" id="nascimento" name="data_nasc_gato" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="tutor">tutor:</label>
+                <input type="text" id="tutor" name="tutor" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="data_chegada_gato">data de chegada do gato:</label>
+                <input type="date" id="data_chegada_gato" name="data_chegada_gato" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="peso_gato">peso do gato:</label>
+                <input type="text" id="peso" name="peso_gato" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Cadastrar</button><br><br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+body {
+    background-color: #f9f9f9;
+    color: white;
+}
+
+
+.header {
+    position: absolute;
+    width: 1480px;
+    height: 120px;
+    left: 0px;
+    top: -1px;
+}
+
+#btn-menu {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    margin-right: 20px; 
+    max-width: 100px; 
+    height: auto; 
+}
+/* Estilos das fichas dos gatinhos */
+.ficha {
+    background-color: #f9f9f9;
+    margin-bottom: 20px; 
+    border-radius: 20px; 
+}
+
+.ficha .caixa {
+    border: 1px solid #968e8e;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.ficha img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-input {
+    display: none; /* Inicialmente oculta as caixas de entrada e seleções de texto */
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo input[type="text"],
+.campo select {
+    width: 100%; 
+    padding: 8px;
+    box-sizing: border-box; 
+}
+
+.campo input[type="text"]::placeholder {
+    color: #999; 
+}
+
+.campo input[type="text"]:focus::placeholder {
+    color: transparent; /* Remove o texto do placeholder quando o campo está focado */
+}
+
+.nav-tabs {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 10px 0; 
+}
+
+.tab {
+    color: rgb(11, 0, 0); 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border-radius: 5px; 
+}
+
+.tab:hover {
+    background-color: #a89e9e; /* Cor de fundo ao passar o mouse sobre as abas */
+}
+
+.tab:focus {
+    outline: none; 
+}
+
+.logo {
+    margin-top: 10px; 
+}
+
+.header h1 {
+    margin-top: 10px; 
+    text-align: center; 
+}
+.botaoMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    /* gap: 8px; */
+    position: absolute;
+    width: 91px;
+    height: 52px;
+    left: 114px;
+    top: 36px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+.botaoMenu:hover{
+    background-color: #555;
+}
+
+form {
+    display: flex;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botaopesquisar {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.botaopesquisar:hover {
+    background-color: #555;
+}
+
+.botaoeditar {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.botaoeditar:hover {
+    background-color: #555;
+}
+
+.result-container {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.result-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.result-item {
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+th{
+    border: 1px solid #333;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #ffffff;
+    color: #333;
+}
+tr:nth-child(even) {
+    background-color: #ffffff;
+    color: #333;
+}
+tr:hover {
+    background-color: #555;
+}
+td {
+    background-color: #ffffff;
+    color: #333;
+}
+.msgerro {
+    color: #333;
+}
