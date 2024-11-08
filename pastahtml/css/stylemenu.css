@@ -1,109 +1,40 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
-    position: absolute;
-    width: 1480px;
+    width: 100%;
     height: 120px;
-    left: 0px;
-    top: -1px;
+    position: relative;
 }
 
-.botaoCalendario {
-    font-size: medium;
+.botaoCalendario, .botaoLista, .botaoCadastrar {
+    font-size: 1rem; /* Tamanho flexível */
     border: none;
     cursor: pointer;
     background-color: #F6F4F4;
-    position: absolute;
-    width: 527px;
+    width: 80%; /* Reduzindo largura para adaptar a telas menores */
+    max-width: 527px; /* limita a largura máxima para telas grandes */
     height: 40px;
-    left: 491px;
-    top: 400px;
+    margin: 10px auto; /* add espaçamento automático para centralizar */
+    display: block; /*  centralizar o botão */
 }
 
-.botaoLista {
-    font-size: medium;
-    border: none;
-    cursor: pointer;
-    background-color: #F6F4F4;
-    position: absolute;
-    width: 527px;
-    height: 40px;
-    left: 491px;
-    top: 285px;
-
-}
-
-.botaoCadastrar {
-    font-size: medium;
-    border: none;
-    cursor: pointer;
-    background-color: #F6F4F4;
-    position: absolute;
-    width: 527px;
-    height: 40px;
-    left: 491px;
-    top: 343px;
-}
-
-.botaoVagas {
-    font-size: medium;
-    border: none;
-    cursor: pointer;
-    background-color: #F6F4F4;
-    position: absolute;
-    width: 527px;
-    height: 40px;
-    left: 491px;
-    top: 343px;
-}
-
-.botaoLista:hover{
+.botaoLista:hover, .botaoCadastrar:hover, .botaoCalendario:hover{
     background-color: rgb(148, 144, 144);
     color: white;
 }
-.botaoCadastrar:hover{
-    background-color: rgb(148, 144, 144);
-    color: white;
-}
-.botaoCalendario:hover{
-    background-color: rgb(148, 144, 144);
-    color: white;
-}
-.quadrado1{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 502px;
-    top: 237px;
-    background: #D9D9D9;
+/* Responsividade para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 20px;
+    }
     
-}
-.quadrado2 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 502px;
-    top: 297px;
-    background: #D9D9D9;
-
-}
-.quadrado3 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 502px;
-    top: 353px;
-    background: #D9D9D9;
-
-}
-.quadrado4 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 502px;
-    top: 411px;
-    background: #D9D9D9; 
+    .botaoCalendario, .botaoLista, .botaoCadastrar, .botaoVagas {
+        width: 90%; /* largura maior em telas pequenas */
+        font-size: 0.9rem; /* Ajusta o tamanho do texto */
+    }
 }

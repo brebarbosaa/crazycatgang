@@ -3,150 +3,48 @@ body {
     color: white;
 }
 
-/* Estilos das caixas */
-.caixa {
-    border: 1px solid #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
 
-.container {
-    background-color: #f9f9f9; /* Cor de fundo anterior  (muda a cor dos vaos)*/
-    color: rgb(3, 0, 0); 
-    border-radius: 10px; 
-    margin-top: 20px; 
-}
-
-.input-wide {
-    width: 1000px;
-}
-
-
-.search-bar {
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    width: 1000px;
-    height: 40px; 
-    border-radius: 20px; 
-    padding: 10px; 
-}
 .header {
-    position: absolute;
-    width: 1480px;
     height: 120px;
-    left: 0px;
-    top: -1px;
+    width: 100%;
+    text-align: center;
 }
 
-.logo {
-    margin-right: 20px; 
-    max-width: 100px; 
-    height: auto; 
-}
-/* Estilos das fichas dos gatinhos */
-.ficha {
-    background-color: #f9f9f9;
-    margin-bottom: 20px; 
-    border-radius: 20px; 
-}
-
-.ficha .caixa {
-    border: 1px solid #968e8e;
-    padding: 40px;
-    border-radius: 20px;
-}
-
-.ficha img {
-    max-width: 200px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 50%; /* Transforma a imagem em um círculo */
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-}
-
-.edit-input {
-    display: none; /* Inicialmente oculta as caixas de entrada e seleções de texto */
-}
-
-.campo {
-    margin-bottom: 10px;
-}
-
-.campo input[type="text"],
-.campo select {
-    width: 100%; 
-    padding: 8px;
-    box-sizing: border-box; 
-}
-
-.campo input[type="text"]::placeholder {
-    color: #999; 
-}
-
-.campo input[type="text"]:focus::placeholder {
-    color: transparent; /* Remove o texto do placeholder quando o campo está focado */
-}
-
-.nav-tabs {
-    position: absolute;
-    top: 0;
-    left: 40%;
+.btnMenu {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    padding: 10px 0; 
-}
-
-.tab {
-    color: rgb(11, 0, 0); 
-    text-decoration: none; 
-    padding: 10px 20px; 
-    margin: 0 10px; 
-    border-radius: 5px; 
-}
-
-.tab:hover {
-    background-color: #a89e9e; /* Cor de fundo ao passar o mouse sobre as abas */
-}
-
-.tab:focus {
-    outline: none; 
-}
-
-.logo {
-    margin-top: 10px; 
-}
-
-.header h1 {
-    margin-top: 10px; 
-    text-align: center; 
-}
-.botaoMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    position: absolute;
-    width: 91px;
-    height: 52px;
-    left: 114px;
-    top: 36px;
-    font-size: 16px;
+    padding: 10px 15px;
     cursor: pointer;
     border: none;
-    background-color: #333;
     color: white;
     border-radius: 5px;
+    position: absolute;
+    width: auto;
 }
 
-.botaoMenu:hover{
-    background-color: #555;
+.form-group {
+    color: #333;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .btnMenu {
+        font-size: 14px;
+        padding: 8px 12px;
+        left: 20px; /* Ajusta o botão para uma posição mais próxima da borda esquerda */
+        top: 20px; /* Ajusta a posição do botão para ficar mais acima */
+    }
+}
+
+@media (max-width: 576px) {
+    .btnMenu {
+        font-size: 12px;
+        padding: 10px 15px;
+        left: 10px; /* Mantém o botão próximo da borda em telas muito pequenas */
+        top: 10px;
+        height: auto; /* Remove altura fixa em telas pequenas */
+    }
 }

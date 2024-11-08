@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/stylemenu.css">
         <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="./pastahtml/css/stylemenu.css">
         <title>Menu</title>
     </head>
     <body>
         <div class="header">
-            <img src="img/menu.png">
+            <img src="./pastahtml/img/menu.png" class="img-fluid">
+        </div>
+    <div class="row justify-content-center mt-2">
+        <button onclick="redirecionarLista()" type="submit" class="btn btn-light botaoLista">Lista de Espera</button>
     </div>
-        <button onclick="redirecionarLista()" type="submit" class="botaoLista">Lista de Espera</button>
-        <div class="quadrado2"></div>
-        <button onclick="redirecionarCadastro()" type="submit" class="botaoCadastrar">Cadastrar Novo Gato</button>
-        <div class="quadrado3"></div>
-        <button onclick="redirecionarCalendario()" type="submit" class="botaoCalendario">Calendário</button>
-        <div class="quadrado4"></div>
-
+    <div class="row justify-content-center mt-2">
+        <button onclick="redirecionarCadastro()" type="submit" class="btn btn-light botaoCadastrar">Cadastrar Novo Gato</button>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <button onclick="redirecionarCalendario()" type="submit" class="btn btn-light botaoCalendario">Calendário</button>
+    </div>
         <script>
         function redirecionarCalendario() {
             window.location.href = "pastahtml/vagas2.html";
